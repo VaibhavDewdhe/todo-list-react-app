@@ -50,12 +50,14 @@ const TaskField = styled.li`
 
   .icon-remove {
     display: none;
+    visibility:none;
   }
   .parent:hover {
     border: 2px solid ${({ $isLight }) => ($isLight ? "green" : "white")};
   }
   .parent:hover .icon-remove {
     display: block;
+    
     margin-right: 40px;
   }
 `;
