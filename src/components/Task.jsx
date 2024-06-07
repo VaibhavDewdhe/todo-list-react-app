@@ -33,7 +33,8 @@ const TaskField = styled.li`
     height: 1rem;
     border-radius: 50%;
     margin: 0;
-    border: 1px solid black;
+    border: 1px solid red;
+    background-color: yellow;
     appearance: none;
     -webkit-appearance: none;
     outline: none;
@@ -51,10 +52,11 @@ const TaskField = styled.li`
     display: none;
   }
   .parent:hover {
-    // border: 2px solid red;
+    border: 2px solid ${({ $isLight }) => ($isLight ? "green" : "white")};
   }
   .parent:hover .icon-remove {
     display: block;
+    margin-right: 40px;
   }
 `;
 
